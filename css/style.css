@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px; /* Added padding to avoid content cutting on small screens */
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Limit max width for better responsiveness */
+    width: 100%; /* Make it full width on smaller screens */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, button {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#health-advice {
+    font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 12px;
+        padding: 7px;
+    }
+}
